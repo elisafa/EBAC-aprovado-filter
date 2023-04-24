@@ -9,9 +9,10 @@ const alunos = [
 const aprovados = () => {
   const alunosAprovados = alunos.filter((aluno) => {
     if (aluno.nota >= 6) {
-      console.log(`O aluno(a) ${aluno.nome} foi aprovado(a) com a nota: ${aluno.nota}`);
+      return aluno;
     }
   });
+  return alunosAprovados;
 };
 
-aprovados();
+console.log(aprovados());
